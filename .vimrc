@@ -31,7 +31,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'bronson/vim-trailing-whitespace'
 "Plugin 'xolox/vim-misc'
 "Plugin 'xolox/vim-session'
-Plugin 'wting/gitsessions.vim'
+"Plugin 'wting/gitsessions.vim'
 "Plugin 'ToruIwashita/git-switcher.vim'
 Plugin 'vim-scripts/a.vim'
 
@@ -117,7 +117,7 @@ let g:NERDTreeWinSize=20
 let g:NERDTreeShowLineNumbers=1
 let g:NERDTreeQuitOnOpen=0			"0:remain opening, 1:close
 let g:NERDChristmasTree=1
-let g:NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr', 'tags']
+let g:NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr', 'tags', 'GPATH', 'GRTAGS', 'GTAGS']
 
 let g:nerdtree_tabs_focus_on_files=1
 let g:nerdtree_tabs_open_on_console_startup=1
@@ -429,6 +429,7 @@ set   ignorecase
 set   incsearch "do incremental search
 set   laststatus=2
 set   mouse=a "enable mouse
+set   ttymouse=sgr
 set   number  "show line number
 set   pumheight=10
 set   ruler  "show the cursor position all the time
